@@ -1,0 +1,318 @@
+body { 
+  margin: 0px;
+  color: white;
+  font: 13vw;
+  font-family: 'Bebas Neue', Regular400;
+}
+
+.btext {
+  font-size: 3vw;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  margin-top: 2%;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+h1 { 
+  font-family: 'Bebas Neue', Regular400;
+  margin: 0%;
+}
+
+
+h2 { 
+  margin: 1%;
+  margin-left: 0%;
+}
+
+h2 { 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .flex-container {
+    display: flex;
+    grid-column: 2/5;
+  }
+
+.header-box { 
+  background-color: burlywood; 
+    grid-column: 1/5;
+    grid-row: 1/3;
+  }
+
+  .header-text { 
+    padding-left: 10%;
+    margin: 0;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    /* align-self: flex-start; */
+
+  }
+
+.hero { 
+  display: flex;
+  justify-content: space-between;
+  /* height: 20rem; */
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+
+.boondockstext {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.strippedimages { 
+  background-image: url("/img/boondocksgroup2.jpeg");
+  width: 85vw;
+  height: 35vw;
+  display: flex;
+  align-self: flex-end;
+  background-repeat: no-repeat;
+  /* background-size: 100vw; */
+}
+
+.intro { 
+  font-family: 'Bebas Neue', Regular400;
+  color: white;
+  font-size: 15vw;
+  margin: 0;
+  
+}
+
+
+img {
+  width: 60vw;
+  border-radius: 15px;
+  display: inline-flex;
+  padding: .5rem;
+}
+  .pictures { 
+    background-color: navajowhite;
+    grid-column: 1/5;
+    padding: 2em;
+    justify-items: center;
+    margin: 0 auto;
+    text-align: center;
+    /* display: flex; */
+  }
+
+  .paragraph-box {background-color: burlywood;
+  grid-column: 1/5;
+  padding: 2em;}
+
+  /* navigation bar effects */
+  .menubar ul {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5%;
+  padding-right: 2%;
+  padding-bottom: 15%;
+}
+
+  .menubar li {
+    display: inline;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .first-paragraph {
+    margin-bottom: 3rem;
+  }
+
+  /* gives menubar color and background */
+  .menubar ul li a {
+    text-align: right;
+    padding: .1em 0;
+    text-decoration: none;
+    /* background-color: black; */
+    color: white;
+    border-radius: 8px;
+  }
+
+.menubar a:active{
+    color: darkgray;
+}
+
+  .menubar ul li a:hover,
+  .menubar ul li a:focus {
+      color: black;
+  }
+  /* menubar effects ends */
+
+  .footer {
+    grid-column: 1/5;
+    background-color: black;
+  }
+
+  .footertext { 
+    color:white;
+    text-align: center;
+    padding: 60px;
+    margin: 0;
+  }
+
+  #shape1, #shape2, #shape3, #shape4, #shape5, #shape6{
+    background-color: burlywood;
+    width: 3vw;
+    height: 100%;
+  }
+
+  #shape1 {
+    margin-left: 1%;
+  }
+
+  #shape2 {
+    margin-left: 3%;
+  }
+
+  #shape3 {
+    margin-left: 6%;
+  }
+
+  #shape4 {
+    margin-left: 8%;
+  }
+
+  #shape5 {
+    margin-left: 10%;
+  }
+
+  #shape6 {
+    margin-left: 12%;
+  }
+
+
+
+
+  @media screen and (min-width: 1000px) {
+
+    body { 
+      font: 20vw;
+    }
+
+    .btext {
+      font-size: 1vw;
+    }
+    
+    .grid-container {
+      grid-auto-rows: minmax(100px, auto);
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    h1 { 
+      margin: 0%;
+      font-size: 2rem;
+    }
+
+    h2 { 
+      margin: 1%;
+      margin-left: 0%;
+      font-size: 1.5rem;
+    }
+
+    .hero { 
+      flex-direction: row !important;
+      justify-content: space-between;
+      margin-bottom: 4vw;
+    } 
+
+    .intro { 
+      font-size: 4.5vw;
+      margin: 0;
+
+      
+    }
+
+      .header-text {
+        padding-left: 5%;
+        margin: 0%;
+        margin-bottom: 1vw;
+        align-self: flex-end;
+        order: 1;
+  
+    
+      }
+
+      .strippedimages {
+        align-self: flex-end;
+        /* flex-direction: row;  */
+        /* width: 20vw; */
+        height: 10vw;
+        order: 2;
+        width: 50vw;
+      }
+
+      .header-box {
+        font-size: 1rem;
+      }
+
+      header {
+        padding-top: 2%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        font-size: 1.25vw;
+      }
+      
+
+      .pictures { 
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding: 2em;
+      }
+
+     img { 
+      width: 20vw;
+      padding: 0%;
+    }
+    .paragraph-box {
+      display: flex;
+      font-size: 1rem;
+      padding: 1rem;
+      background-color: burlywood;
+      padding-bottom: 4rem;
+    }
+
+    .first-paragraph, .second-paragraph { 
+      /* padding: 3rem; */
+      padding-left: 4vw;
+      padding-right: 5vw;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+  
+    #shape1, #shape2, #shape3, #shape4, #shape5, #shape6{
+      background-color: burlywood;
+      width: 2vw;
+      height: 100%;
+    }
+
+
+  }
+    
